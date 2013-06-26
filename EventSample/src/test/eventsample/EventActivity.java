@@ -1,5 +1,5 @@
 package test.eventsample;
-//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+//ã‚ã‚ã„
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -16,7 +16,7 @@ public class EventActivity extends Activity implements OnLongClickListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_event);
 		Button bt = (Button)findViewById(R.id.button1);
-		//ƒ{ƒ^ƒ“‚ÉƒCƒxƒ“ƒgƒŠƒXƒi[‚ğ“o˜^‚·‚éB
+		//ï¿½{ï¿½^ï¿½ï¿½ï¿½ÉƒCï¿½xï¿½ï¿½ï¿½gï¿½ï¿½ï¿½Xï¿½iï¿½[ï¿½ï¿½ï¿½oï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½B
 		bt.setOnClickListener(this);
 		bt.setOnLongClickListener(this);
 	}
@@ -30,16 +30,16 @@ public class EventActivity extends Activity implements OnLongClickListener,
 
 	@Override
 	public void onClick(View v) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Button bt = (Button)v;
-		bt.setText("ƒNƒŠƒbƒN‰ñ”"+(++count1));
+		bt.setText("ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½"+(++count1));
 	}
 
 	@Override
 	public boolean onLongClick(View v) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Button bt = (Button)v;
-		bt.setText("ƒƒ“ƒOƒNƒŠƒbƒN‰ñ”"+(++count2));
+		bt.setText("ï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½"+(++count2));
 		return false;
 	}
 
