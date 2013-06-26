@@ -1,5 +1,5 @@
 package test.eventsample;
-
+//コミットテスト！！
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
