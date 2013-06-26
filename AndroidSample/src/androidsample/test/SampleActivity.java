@@ -14,11 +14,10 @@ public class SampleActivity extends Activity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sample);
 		Button[] bt = new Button[2];
-		bt[0] = (Button)findViewById(R.id.button1); //findViewByid‚ÅAview‚Ìƒ{ƒ^ƒ“‚ğŒÄ‚Ño‚µ‚Ä‚¢‚éB
+		bt[0] = (Button)findViewById(R.id.button1); 
 		bt[1] = (Button)findViewById(R.id.button2);
 		for(int i=0; i<bt.length; i++){
-			bt[i].setOnClickListener(this); //SampleActivityƒNƒ‰ƒX‚ªOnClickListenerƒCƒ“ƒ^[ƒtƒF[ƒX‚ğÀ‘•‚µ‚Ä‚¢‚é‚½‚ßA
-										//this‚Æ“ü—Í‚·‚éB
+			bt[i].setOnClickListener(this);  //ã“ã®ã‚¯ãƒ©ã‚¹ã§å®Ÿè£…ã™ã‚‹ã‹ã‚‰this
 		}
 	}
 
@@ -31,13 +30,9 @@ public class SampleActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ã‚¹ã‚¿ãƒ–
 		Button bt = (Button) v;
-		if(v.getId() == R.id.button1) bt.setText(++count1+"‰ñ–Ú");
-		else bt.setText(++count2+"‰ñ–Ú");
+		if(v.getId() == R.id.button1) bt.setText(++count1+"ï¿½ï¿½ï¿½");
+		else bt.setText(++count2+"å›ç›®");
 	}
-	
-	//ƒRƒ~ƒbƒgƒeƒXƒg‚—
-	//ƒeƒX‚Ä‚·
-
 }

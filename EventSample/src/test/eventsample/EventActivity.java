@@ -16,7 +16,7 @@ public class EventActivity extends Activity implements OnLongClickListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_event);
 		Button bt = (Button)findViewById(R.id.button1);
-		//�{�^���ɃC�x���g���X�i�[���o�^�����B
+		//ボタンにイベントリスナーを追加する。
 		bt.setOnClickListener(this);
 		bt.setOnLongClickListener(this);
 	}
@@ -30,16 +30,16 @@ public class EventActivity extends Activity implements OnLongClickListener,
 
 	@Override
 	public void onClick(View v) {
-		// TODO �����������ꂽ���\�b�h�E�X�^�u
+		// TODO 自動生成されたメソッド・スタブ
 		Button bt = (Button)v;
-		bt.setText("�N���b�N����"+(++count1));
+		bt.setText("クリックした回数"+(++count1));
 	}
 
 	@Override
 	public boolean onLongClick(View v) {
-		// TODO �����������ꂽ���\�b�h�E�X�^�u
+		// TODO 自動生成されたメソッド・スタブ
 		Button bt = (Button)v;
-		bt.setText("�����O�N���b�N����"+(++count2));
+		bt.setText("ロングクリックした回数"+(++count2));
 		return false;
 	}
 
