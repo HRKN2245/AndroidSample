@@ -33,6 +33,7 @@ public class EventActivity extends Activity implements OnLongClickListener,
 		// TODO 自動生成されたメソッド・スタブ
 		Button bt = (Button)v;
 		bt.setText("クリックした回数"+(++count1));
+		if(count1 > 10) bt.setEnabled(false);
 	}
 
 	@Override
